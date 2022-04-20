@@ -57,6 +57,7 @@
     <fieldset>
         <legend>Alap Számológép</legend>
         <form action="javascript:void(0);">
+            <div>
             <input class="inp" type="number" name="nbr" id="x_ert" placeholder="x érték" required><br>
             <input class="inp" type="number" name="nbr" id="y_ert" placeholder="y érték" required><br>
             <input class="but" type="button" value="Összeadás" onclick="osszead()"> <input type="text" id="ossz" readonly>
@@ -65,7 +66,8 @@
             <input class="but" type="button" value="Szorzás" onclick="szorz()"> <input type="text" id="szor" readonly> <br>
             <input class="but" type="button" value="Osztás" onclick="oszt()"> <input type="text" id="osztas" readonly> <br>
             <input class="but" type="submit" name="sub" id="subm" value="SZÁMOLD KI MINDET!" onclick="osszead();kivon();szorz();oszt()">
-        </form>
+            </div>
+                </form>
     </fieldset>
     <script>
         function osszead() {
